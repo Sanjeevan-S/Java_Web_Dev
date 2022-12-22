@@ -1,18 +1,39 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Home</title>
+    <link  rel="stylesheet" href="stylesheet.css" />
+    <title>Survey form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-	<h1>Testing</h1>
-	<ul>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-	</ul>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Description change later</p>
+    <hr>
+    <form class="survey-form">
+        <fieldset class="details-fs ">
+            <label id="name-label">Name<input id="name" type="text" placeholder="Name here" required class="name" /></label>
+            <label id="email-label">Email<input id="email" type="email" placeholder="mail here" required class="email"/></label>
+            <label id="number-label">number<input id="number" type="number" pattern="[0-9]" min="1" max="50" placeholder="123456" class="number"/></label>
+        </fieldset>
+        <hr>
+        <fieldset >
+            <select id="dropdown">
+                <label>options box<option>o1</option><option>o2</option>
+                </label>
+            </select>
+            <label>op1:<input type="radio" name="op1-op2" value="o1"/></label>
+            <label >op2:<input type="radio" name="op1-op2" value="o1"/></label>
+            <label>checkboxes1 :<input type="checkbox" value="1"/></label>
+            <label>checkbox2 :<input type="checkbox" value="2"/></label>
+            <label>checkbox3 :<input type="checkbox" value="2"/></label>
+            <label>text area example<textarea name="txtarea" rows="3" col="40" placeholder="type here"></textarea>
+            </label>
+            </fieldset>
+        <hr>
+            <input type="submit" name="submit" id="submit"/>
 
+        <hr>
+    </form>
 </body>
 </html>
